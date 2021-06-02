@@ -17,8 +17,11 @@ public class Departmentcontroller {
 	@PostMapping("/adddepartment{id}")
 	private Department AddDepartmentdetials( @RequestBody Department dep,@PathVariable int id) throws InvalidException 
 	{
+		System.out.println("hii");
 		return service.addDepartment(dep, id);
+		
 	}
+	
 //	@PutMapping("/update/{id}")
 //	private void updatedepartmentdetails(@RequestBody Department dep,@PathVariable int id)
 //	{
@@ -35,11 +38,11 @@ public class Departmentcontroller {
 //	{
 //		service.deletedepartment(id);
 //	}
-////	@PostMapping("/add")
-////	private Department adddepartmentdetails(@RequestBody Department department)
-////	{
-////		return service.Adddepartment(department);
-////		
-////	}
+//	@PostMapping("/add")
+//	private Department adddepartmentdetails(@RequestBody Department department)
+//	{
+//		return service.Adddepartment(department);
+//		
+//	}
 
 }
